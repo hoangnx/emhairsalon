@@ -1,0 +1,87 @@
+
+$font-Montserrat:  'Montserrat', sans-serif;
+body{
+	font-family: $font-Montserrat;
+	background-image: url(../img/background-body.jpg);
+	background-size: cover;
+}
+@import "maxin";
+/*HEADER START*/
+
+@import "header";
+.header-main{
+	a.dropdown-toggle::before{
+		width:0;
+	}
+	li.dropdown:hover .fa-search{
+		color: $color-yellow;
+	}
+}
+/*HEADER END*/
+
+/*SECTION GALLERY START*/
+#section-gallery{
+	.product-show{
+		@include more-all;
+	}
+	.product-hide{
+		opacity: 0;
+		@include more-all;
+	}
+	.title-content{
+		color: #3f719e;
+		text-shadow: rgba(0,0,0,.5) 1px 1px 2px;
+		font-size: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0 auto;
+		padding: 14px 0
+	}
+	.content{
+		display: flex;
+		flex-wrap: wrap;
+		.img-item{
+			width: 100%;
+			height: 180px;
+			margin-bottom: 20px;
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px 1px;;
+			}
+			&:hover{
+				img{
+					transform: scale(1.1);
+					box-shadow: rgba(0,0,0,.7) 4px 4px 7px 3px;
+				}
+			}
+		}
+	}
+}
+/*SECTION GALLERY END*/
+
+/*FOOTER START*/
+@import "footer";
+/*FOOTER END*/
+
+@media (min-width: 576px) and(max-width: 991px){
+	#section-gallery{
+		.content{
+			.img-item{
+				margin-bottom: 0 !important;
+				height: 160px !important;
+			}
+		}
+	}
+}
+@media (min-width: 992px){
+	.title-content{
+		font-size: 25px !important;
+		padding: 16px 0 !important;
+	}
+	.img-item{
+		height: 255px !important;
+	}
+}

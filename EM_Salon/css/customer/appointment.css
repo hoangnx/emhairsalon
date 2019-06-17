@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*use variable declaration start*/
+body, a, span, ul, li, p, h1, h2, h3, h4, h5, h6, button, input, img, i {
+  transition: all .5s ease;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a, a:hover, button {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+/*HEADER START*/
+.header-top {
+  background: #1c1d17;
+  color: #fff;
+}
+.header-top .fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.header-top .header-left {
+  width: 100%;
+}
+.header-top .header-left .logo {
+  text-align: center;
+}
+.header-top .header-left .logo img {
+  max-height: 60px;
+  max-width: 60px;
+}
+.header-top .header-left .header-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header-top .header-left .header-item svg.svg-inline--fa.fa-map-marker-alt.fa-w-12, .header-top .header-left .header-item svg.svg-inline--fa.fa-clock.fa-w-16, .header-top .header-left .header-item svg.svg-inline--fa.fa-phone-square.fa-w-14, .header-top .header-left .header-item svg.svg-inline--fa.fa-globe-europe.fa-w-16, .header-top .header-left .header-item svg.svg-inline--fa.fa-phone.fa-w-16, .header-top .header-left .header-item svg.svg-inline--fa.fa-envelope.fa-w-16, .header-top .header-left .header-item svg.svg-inline--fa.fa-facebook-f.fa-w-9 {
+  color: #ff9900;
+  margin-right: 5px;
+}
+.header-top .header-left .header-item span {
+  font-size: 12px;
+}
+
+/*heder end*/
+/*appointment start*/
+#section-appointment {
+  padding: 20px 0;
+}
+#section-appointment .tab-main form p {
+  font-size: 16px !important;
+}
+#section-appointment .tab-main form .theme-text {
+  color: #007bff;
+}
+#section-appointment .tab-main form .form-group .full-name {
+  padding-right: 0;
+}
+#section-appointment .tab-main form .booking-service-info input {
+  box-shadow: none;
+}
+#section-appointment .tab-main form .booking-service-info .show-date p {
+  font-size: 14px !important;
+}
+#section-appointment .tab-main form .booking-service-info .booking-info .item-date {
+  display: flex;
+}
+#section-appointment .tab-main form .booking-service-info .booking-info .btn-date {
+  background-color: #f8ca4096;
+}
+#section-appointment .tab-main form .booking-service-info .slick-intialized {
+  width: 100%;
+}
+#section-appointment .tab-main form .booking-service-info .slick-intialized .polite {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+}
+#section-appointment .tab-main form .booking-service-info .slick-intialized .polite .item-polite {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+#section-appointment .tab-main form .booking-service-info .slick-intialized .polite .item-polite .day-in-week {
+  font-size: 18px;
+  font-weight: 700;
+}
+#section-appointment .tab-main form .booking-service-info .slick-intialized .polite .list-1 {
+  margin-left: -15px;
+}
+#section-appointment .tab-main form .booking-service-info .slick-intialized .polite .list-2 {
+  margin: 0 -7px;
+}
+#section-appointment .tab-main form .booking-service-info .slick-intialized .polite .list-3 {
+  margin-right: -15px;
+}
+#section-appointment .tab-main form .booking-service-info .slick-intialized .polite .active {
+  background-color: #f3c27ab8;
+}
+#section-appointment .tab-main form .booking-service-info #operatorSeting p {
+  color: #007bff;
+}
+#section-appointment .tab-main form .booking-service-info #operatorSeting .choose-user {
+  display: flex;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime ul {
+  justify-content: space-between;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime ul li {
+  border: 1px solid #ffc10785;
+  border-radius: 4px;
+  padding: 0;
+  max-width: 130px;
+  text-align: center;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime ul li a {
+  color: black;
+  padding: 10px 5px !important;
+  width: 100%;
+  display: inline-block;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime .time-main #time-select {
+  margin-top: 16px;
+  color: #007bff;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime .time-main .timeFrame .box-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime .time-main .timeFrame .box-content button {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime .time-main .timeFrame .box-content .still-place {
+  border-bottom: 2px solid #42bc00;
+  padding: 4px;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime .time-main .timeFrame .box-content .full-place {
+  border-bottom: 2px solid #ee0000;
+  color: black;
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+  padding: 4px;
+}
+#section-appointment .tab-main form .booking-service-info #selectTime .time-main .timeFrame .box-content .button-bg {
+  background-color: #007bff75;
+}
+#section-appointment .tab-main form #productSetting .choose-title {
+  color: #007bff;
+}
+#section-appointment .tab-main form #comment .choose-title {
+  color: #007bff;
+}
+#section-appointment .tab-main form .book {
+  background-color: #007bff78;
+  box-shadow: none;
+}
+#section-appointment .tab-main form .current {
+  background-color: #ffc1073b;
+}
+
+/*appointment end*/
+/*FOOTER START*/
+/*FOOTER START*/
+footer {
+  background: url(../../images/footer.jpg) no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+footer .go-up {
+  font-size: 30px;
+  position: fixed;
+  z-index: 9999999;
+  right: 5%;
+  bottom: 20px;
+  cursor: pointer;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ff9900;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-transition: all 0.34s linear;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+footer .go-up:hover {
+  background-color: #ff9900;
+}
+footer .go-up:hover .fa-arrow-up {
+  top: 40%;
+}
+footer .go-up .fa-arrow-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
+  -webkit-transition: all 0.34s linear;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+footer .widget {
+  margin-bottom: 30px;
+  width: 100%;
+}
+footer .widget h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .widget hr {
+  width: 60px;
+  border-top: 2px solid #ff9900;
+}
+footer .widget li:hover a {
+  color: #ff9900;
+}
+footer .widget .about-widget .btn-subscrite {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  background: #ca0909;
+  color: #fff;
+}
+footer .widget .about-widget .btn-subscrite:hover {
+  background: red;
+}
+footer .widget .about-widget ul li p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+footer .widget .about-widget ul li .fa-map-marker-alt, footer .widget .about-widget ul li .fa-envelope, footer .widget .about-widget ul li .fa-phone {
+  color: #ff9900;
+  margin-right: 10px;
+}
+footer .widget .link-widget ul li {
+  justify-content: space-between;
+  display: flex;
+}
+footer .widget .nav-link {
+  color: #fff;
+  padding: 0;
+}
+footer .widget .recent-post-widget {
+  display: flex;
+}
+footer .widget .recent-post-widget a {
+  color: #fff;
+}
+footer .widget .recent-post-widget a img {
+  width: 100%;
+  height: 80px;
+}
+footer .widget .recent-post-widget a:hover {
+  color: #ff9900;
+}
+footer .coppy-right {
+  margin: -15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/*FOOTER END*/
+/*share start*/
+.share {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 22%;
+  left: 1%;
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+  transform: translate(0, 0);
+  z-index: 5;
+}
+.share img#click-show-share {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease-in-out;
+  z-index: 333333333;
+  cursor: pointer;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 3px 2px;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.share img#click-show-share:hover {
+  transform: rotate(180deg);
+  left: 40%;
+  top: 25%;
+}
+.share .share-in {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 50%;
+  transform: translate(0, 0);
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform .3s .3s ease-in-out;
+}
+.share .share-in:hover {
+  color: #ff9900;
+  background: #2980b9;
+}
+
+/****************share end*************************/
+/*js share*/
+.show-share-in {
+  left: 20px;
+  transform: translate(0, 200px);
+}
+.show-share-in #click-show-share {
+  transform: rotate(45deg);
+  width: 100%;
+  height: 100%;
+}
+.show-share-in #click-show-share:hover {
+  transform: rotate(0deg);
+}
+
+.show-share-in .share-in:nth-child(1) {
+  transform: translate(-10px, -55px);
+}
+
+.show-share-in .share-in:nth-child(2) {
+  transform: translate(35px, -40px);
+}
+
+.show-share-in .share-in:nth-child(3) {
+  transform: translate(55px, 0px);
+}
+
+.show-share-in .share-in:nth-child(4) {
+  transform: translate(35px, 40px);
+}
+
+.show-share-in .share-in:nth-child(5) {
+  transform: translate(-10px, 55px);
+}
+
+.show-share-in .share-in:nth-child(1),
+.show-share-in .share-in:nth-child(2),
+.show-share-in .share-in:nth-child(3),
+.show-share-in .share-in:nth-child(4),
+.show-share-in .share-in:nth-child(5) {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*FOOTER END*/
+/*REPONSIVE TABLET  START*/
+@media (min-width: 575px) and (max-width: 768px) {
+  .header-top .header-left {
+    font-size: 10px !important;
+  }
+}
+/*REPONSIVE TABLET  END*/
+/*REPONSIVE DESKTOP MIN START*/
+/*REPONSIVE DESKTOP END*/
+/*REPONSIVE DESKTOP MAX*/
+@media (min-width: 992px) {
+  .header-left .header-item span {
+    font-size: 14px !important;
+  }
+
+  .booking-service-info .show-date p {
+    font-size: 16px !important;
+  }
+}
+
+/*# sourceMappingURL=appointment.css.map */

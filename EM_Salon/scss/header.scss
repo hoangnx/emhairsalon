@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+*{margin:0; padding:0;}
+/*use variable declaration start*/
+$font-Roboto :  'Roboto', sans-serif;
+$font-Montserrat:  'Montserrat', sans-serif;
+$color-yellow:  #ff9900;
+$color-buttun: #fff;
+$color-white:#fff;
+$background-black: #1c1d17;
+$hover-yellow: #ffb84d;
+$size-16: 16px;
+$size-14: 14px;
+body,a,span,ul,li,p,h1,h2,h3,h4,h5,h6,button,input,img,i {
+	transition: all .5s ease;
+}
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: $font-Roboto;
+}
+a, a:hover, button {
+	text-decoration: none !important;
+	outline: none !important;
+}
+/*HEADER START*/
+.header-top{
+	background-color: #1c1d17;
+	color: $color-white;
+	font-family:$font-Montserrat;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+.icon{
+		.fa-facebook-square{
+			margin-left: 0;
+		}
+		.fa-facebook-square, .fa-google-plus-square, .fa-twitter-square{
+			color: $color-white;
+			margin-left: 15px;
+			font-size: 34px;
+		}
+	}
+	.line-right{
+		border-left: 1px solid #f6ededc9;  
+        font-size: 14px; 
+    }
+    .line-left{
+      border-left: 1px solid #f6ededc9;
+      border-right: 1px solid #f6ededc9;
+      font-size: 14px;
+  }
+}
+.header-main{
+	font-family: $font-Montserrat;
+	img{
+		width: 80px;
+	}
+	.navbar-dark .navbar-nav .nav-link{
+		color: #fff;
+	}
+	.fixed-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%; 
+		z-index: 99999;
+	}
+	ul{
+		li{
+			.active{
+				color: $color-yellow !important;
+			}
+			a{
+				position: relative;
+				color: #fff;
+			}
+			a::before{
+				content: "";
+				position: absolute;
+				width: 45px;
+				left: 50%;
+				height: 2px;
+				background: $color-yellow;
+				transform: translateX(-50%) scale(0);
+				bottom: 4px;
+				transition: all .3s ease;
+			}
+			a:hover::before{
+				transform: translateX(-50%) scale(1);
+			}
+			button a::before{
+				width: 0;
+				content: "";
+			}
+			.btn-appointment{
+				background-color: $color-yellow;
+				border-radius: 5px;
+			}
+			&:hover a{
+				color: $color-yellow ;
+			}
+			&:hover .btn-appointment{
+				color: #fff;
+				background-color: $hover-yellow;
+			}
+			a.btn-appointment::before{
+				width: 0;
+			}
+		}
+	}
+}
+/*HEADER END*/
+@media (min-width: 575px) and (max-width: 768px) {
+	/*HAEDER*/	
+	.header-main{
+		button.navbar-toggler{
+			margin-right: 30px;
+		}
+		a.navbar-brand {
+			display: inline-block;
+			margin-left: 30px;
+		}
+		ul{
+			text-align: center;		
+		}
+	}		
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.header-main{
+		.navbar-dark .navbar-brand {
+			margin-left: 15px;
+			margin-right: 0;
+		}
+		button.navbar-toggler {
+			margin-right: 30px;
+		}
+		li{	
+			font-size: 17px;		
+			a.nav-link{
+				padding: 7px !important;
+			}
+		}
+	}
+}
+@media (min-width: 992px){
+	/*header start*/
+	.header-top{
+		height: 50px;
+		display: block;
+		font-size: 16px !important;
+		.icon{
+			padding-top: 7px;
+			svg.svg-inline--fa.fa-facebook-square.fa-w-14:hover, svg.svg-inline--fa.fa-google-plus-square.fa-w-14:hover ,svg.svg-inline--fa.fa-twitter-square.fa-w-14:hover{
+				color: $color-yellow;
+			}	
+		}
+		.icon, .line-right, .line-left{
+			height: 50px;
+			text-align: center;
+			border-left: 1px solid #fff;
+			border-right: 1px solid #fff;
+			line-height: 50px;
+			width: 40px;
+			font-size: 16px !important;
+		}	
+		.line-right{
+			border-left: none;
+			border-right: none;
+		}
+	}
+	.header-main{
+		ul.navbar-nav{
+			margin-left: auto !important;
+		}
+		li{
+			font-size: 20px !important;
+			margin-left: 10px;
+		}
+	}
+}

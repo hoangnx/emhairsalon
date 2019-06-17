@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+*{margin:0; padding:0;}
+/*use variable declaration start*/
+$font-Roboto :  'Roboto', sans-serif;
+$font-Montserrat:  'Montserrat', sans-serif;
+$color-yellow:  #ff9900;
+$color-info: #007bff;
+$color-buttun: #fff;
+$color-white:#fff;
+$background-black: #1c1d17;
+$hover-yellow: #ffb84d;
+body,a,span,ul,li,p,h1,h2,h3,h4,h5,h6,button,input,img,i {
+	transition: all .5s ease;
+}
+body{
+	font-family: $font-Montserrat;
+}
+a, a:hover, button {
+	text-decoration: none !important;
+	outline: none !important;
+}
+/*HEADER START*/
+.header-top {
+	background: #1c1d17;
+	color: #fff;
+	.fixed-header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9;
+	}
+	.header-left {
+		width: 100%;
+		.logo{
+			text-align: center;
+			img{
+				max-height: 60px;
+				max-width: 60px;
+			}
+		}
+		.header-item {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			svg.svg-inline--fa.fa-map-marker-alt.fa-w-12,svg.svg-inline--fa.fa-clock.fa-w-16 , svg.svg-inline--fa.fa-phone-square.fa-w-14,svg.svg-inline--fa.fa-globe-europe.fa-w-16,svg.svg-inline--fa.fa-phone.fa-w-16 , svg.svg-inline--fa.fa-envelope.fa-w-16, svg.svg-inline--fa.fa-facebook-f.fa-w-9{
+				color: $color-yellow;
+				margin-right: 5px;
+			}
+			span{
+				font-size: 12px;
+			}
+		}
+	}
+}
+/*heder end*/
+
+/*appointment start*/
+#section-appointment{
+	padding:20px 0;
+	.tab-main{
+		form{
+			p{
+				font-size: 16px !important;
+			}
+			.theme-text{
+				color: $color-info;
+			}
+			.form-group{
+				.full-name {
+					padding-right: 0;
+				}
+			}
+			.booking-service-info{
+				input{
+					box-shadow: none;
+				}
+				.show-date{
+					p{
+						font-size: 14px !important;
+					}
+					
+				}
+				.booking-info{
+					.item-date{
+						display: flex;
+					}
+					.btn-date{
+						background-color: #f8ca4096;
+					}	
+				}
+				.slick-intialized{
+					width: 100%;
+					.polite {
+						width: 100%;
+						display: flex;
+						margin:10px 0;
+						.item-polite{
+							border: 1px solid rgba(0,0,0,0.3);
+							text-align: center;
+							.day-in-week{
+								font-size: 18px;
+								font-weight: 700;
+							}
+						}
+						.list-1 {
+							margin-left: -15px;
+						}
+						.list-2{
+							margin: 0 -7px;
+						}
+						.list-3{
+							margin-right: -15px;
+						}
+						.active{
+							background-color: #f3c27ab8;
+						}
+					}
+				}
+				#operatorSeting{
+					p{
+						color: $color-info;
+					}
+					.choose-user{
+						display: flex;
+					}
+				}
+				#date{
+
+				}
+				#selectTime{
+					ul{
+						justify-content: space-between;
+						li{
+							border: 1px solid #ffc10785;
+							border-radius: 4px;
+							padding: 0;
+							max-width: 130px;
+							text-align: center;
+							a{
+								color: black;
+								padding: 10px 5px!important;
+								width: 100%;
+								display: inline-block;
+							}
+						}
+					}
+					.time-main{
+						#time-select{
+							margin-top:16px;
+							color: $color-info;
+						}
+						.timeFrame{
+							.box-content{
+								display: flex;
+								flex-wrap: wrap;
+								justify-content: space-between;
+								button{
+									border: 1px solid rgba(0,0,0,0.3);
+									display: inline-block;
+									margin-bottom:10px;
+									cursor: pointer;
+									box-shadow: none;
+									-webkit-box-shadow: none;
+								}
+								.still-place{
+									border-bottom: 2px solid #42bc00;
+									padding: 4px;
+								}
+								.full-place{
+									border-bottom: 2px solid #ee0000;
+									color: black;
+									pointer-events: none;
+									cursor: not-allowed;
+									opacity: 0.6;
+									padding: 4px;
+								}
+								.button-bg{
+									background-color:  #007bff75;
+								}
+							}	
+						}
+					}
+				}	
+			}
+			#productSetting{
+				.choose-title {
+					color: $color-info;
+				}
+			}
+			#comment{
+				.choose-title {
+					color: $color-info;
+				}
+			}
+			.book {
+				background-color: #007bff78;
+				box-shadow: none;
+			}
+			.current{
+				background-color: #ffc1073b;
+			}
+		}
+	}
+}
+/*appointment end*/
+/*FOOTER START*/
+@import "footer";
+/*FOOTER END*/
+
+/*REPONSIVE TABLET  START*/
+@media (min-width: 575px) and (max-width: 768px) {
+	.header-top{
+		.header-left{
+			font-size: 10px !important;
+		}
+	}	
+}
+/*REPONSIVE TABLET  END*/
+
+/*REPONSIVE DESKTOP MIN START*/
+@media (min-width: 768px) and (max-width: 991px){
+	
+}
+/*REPONSIVE DESKTOP END*/
+
+/*REPONSIVE DESKTOP MAX*/
+@media (min-width: 992px){
+	.header-left{
+		.header-item{
+			span {
+				font-size: 14px !important;
+			}
+		}
+	}
+	.booking-service-info{
+		.show-date{
+			p {
+				font-size: 16px !important;
+			}
+		}
+	}
+}

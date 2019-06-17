@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+*{margin:0; padding:0;}
+/*use variable declaration start*/
+$font-Roboto :  'Roboto', sans-serif;
+$font-Montserrat:  'Montserrat', sans-serif;
+$color-yellow: #ff9900;
+$color-buttun:#fff;
+$color-white: #fff;
+$background-black: #1c1d17;
+$hover-yellow:#ffb84d;
+body,a,span,ul,li,p,h1,h2,h3,h4,h5,h6,button,input,img,i {
+	transition: all .5s ease;
+}
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-family: $font-Roboto;
+}
+a, a:hover, button {
+	text-decoration: none !important;
+	outline: none !important;
+}
+@import "maxin";
+/*HEADER START*/
+
+@import "header";
+.header-main{
+	a.dropdown-toggle::before{
+		width:0;
+	}
+	li.dropdown:hover .fa-search{
+		color: $color-yellow;
+	}
+}
+/*HEADER END*/
+/*QUICKVIEW START*/
+#default{
+	.xzoom-thumbs a img{
+		width: 70px;
+	}
+	.view-title {
+		padding-left: 5%;
+		h5{
+			font-size: 13px;
+		}
+		p{
+			margin-bottom: 0;
+			font-size: 13px;
+			span{	
+				padding-right: 15px;
+			}
+		}
+		.view-price{
+			color:$color-yellow;
+			font-size: 14px;
+		}
+	}
+	.details{
+		padding-left: 20px;
+		border:1px solid rgba(0,0,0,0.3);
+		font-size: 17px;
+		width:100%;
+		padding: 30px 15px;
+		h4{
+			font-size: 24px;
+			color: $color-yellow;
+		}
+		.four-oz{
+			font-size: 16px;
+			font-weight: 600;
+		}
+		.details-icon{
+			svg.svg-inline--fa.fa-caret-right.fa-w-6 {
+				height: 28px;
+				height: 16;
+				width: 25px;
+				line-height: 28px;
+				display: inline-block;
+				padding-top: 4px;
+			}
+		}
+		hr{
+			border:1px solid rgba(0,0,0,0.1);
+		}
+		.contact{
+			font-weight: 700;
+			p{
+				.fa-square {
+					font-size: 12px;
+					margin: 0 10px;
+				}
+			}	
+		}
+	}
+	.products{
+		padding: 30px 15px;
+		h4{
+			text-transform: uppercase;
+			margin: 20px 0;
+			color: $color-yellow;
+		}
+		.item{
+			.box-carousel{
+				position: relative;
+			}
+			.box-image{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			img{
+				box-sizing: border-box;
+				border: 1px solid rgba(0,0,0,0.3);
+				width: 100%;
+				height: 100%;
+			}
+		}	
+		.box-name{
+			a{
+				color: black;
+				font-size: 14px;
+				padding-top: 10px;
+				display: inline-block;
+				&:hover{
+					color: $color-yellow;
+				}
+			}
+		}	
+		.box-price{
+			margin-top: 15px;
+		}
+		.owl-stage-outer {
+			margin: 15px 0;
+		}
+		p.shop-price.text-center {
+			margin: 0;
+		}
+		svg.svg-inline--fa.fa-caret-right.fa-w-6,svg.svg-inline--fa.fa-caret-left.fa-w-6  {
+			font-size: 40px;
+			color: $color-yellow;
+		}
+	}
+}
+
+/*QUICKVIEW END*/
+/*FOOTER START*/
+@import "footer";
+/*FOOTER END*/
+
+/*REPONSIVE DESKTOP MIN START*/
+@media (min-width: 768px) and (max-width: 991px){
+	.view-title {
+		padding-left: 5%;
+		h5{
+			margin-bottom: 30px;
+			font-size: 25px !important;
+		}
+		p{
+			font-size: 20px !important;
+			margin-bottom: 25px !important;
+			span{
+				font-weight: 600;
+				padding-right: 15px;
+			}
+		}
+		.view-price{
+			font-size: 24px !important;
+		}
+	}
+	#default{
+		.xzoom-thumbs a img{
+			width: 70px;
+		}
+		.details{
+			.four-oz{
+				font-size: 18px !important;
+			}
+		}	
+	}
+	/*PRODUCT SHOP*/
+	.products{
+		padding: 50px 0;
+		h4{
+			text-transform: uppercase;
+			margin: 20px 0;
+			color: $color-yellow;
+		}
+		.item{
+			.box-carousel{
+				position: relative;
+			}
+			.box-image{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			img{
+				box-sizing: border-box;
+				border: 1px solid rgba(0,0,0,0.3);
+				width: 100%;
+				height: 100%;
+			}	
+		}	
+		.box-name{
+			a{
+				font-size: 18px !important;
+			}
+		}	
+		.box-price{
+			font-size: 20px;
+		}	
+	}
+}
+/*REPONSIVE DESKTOP END*/
+
+/*REPONSIVE DESKTOP MAX*/
+@media (min-width: 992px){
+	.view-title {
+		padding-left: 5%;
+		h5{
+			font-size: 25px !important;
+		}
+		p{
+			font-size: 17px !important;
+			padding-bottom: 10px;
+			span{
+				padding-right: 20px !important;
+				font-weight: 600;
+			}
+		}
+		.view-price{
+			font-size: 24px !important;
+		}
+	}
+	#default{
+		.xzoom-thumbs a img{
+			width: 120px;
+		}
+		.four-oz{
+			font-size: 20px !important;
+		}
+		.details{
+			.details-icon{
+				span{
+					font-size: 18px !important;
+				}
+			}
+			.contact{
+				p{
+					font-size: 18px !important;
+				}
+			}
+		}
+		.products{
+			.box-name{
+				a{
+					font-size: 20px;
+				}	
+			}
+			.box-price{
+				font-size: 25px;
+			}	
+		}
+	}
+}

@@ -1,0 +1,68 @@
+@mixin square{
+	.service-title{
+		text-align: center;
+		padding-bottom: 70px;
+		h2{
+			font-size: 40px;
+			font-weight: 600;
+			color: #222222;
+		}
+		span{
+			display: inline-block;
+			height: 10px;
+			width: 10px;
+			background: $color-yellow;
+			transform: rotate(45deg);
+			margin: 20px 5px 0;
+			position: relative;
+		}
+	}
+}
+@mixin more-all{
+	.more-shop{
+		text-align: center;
+		vertical-align: center;
+		position: relative;
+		margin: 20px;
+		a.btn.btn-shop {
+			background: $color-yellow;
+			color: #fff;
+			font-weight: 400;
+			display: inline-block;
+			font-family: $font-Montserrat;
+			-webkit-transform: perspective(1px) translateZ(0);
+			transform: perspective(1px) translateZ(0);
+			&:hover{
+				background-color: $hover-yellow;
+				-webkit-animation-name: hvr-buzz;
+				animation-name: hvr-buzz;
+				-webkit-animation-duration: 0.15s;
+				animation-duration: 0.15s;
+				-webkit-animation-timing-function: linear;
+				animation-timing-function: linear;
+				-webkit-animation-iteration-count: infinite;
+				animation-iteration-count: infinite;
+			}
+		}
+	}
+	@-webkit-keyframes hvr-buzz {
+		50% {
+			-webkit-transform: translateX(3px) rotate(2deg);
+			transform: translateX(3px) rotate(2deg);
+		}
+		100% {
+			-webkit-transform: translateX(-3px) rotate(-2deg);
+			transform: translateX(-3px) rotate(-2deg);
+		}
+	}
+	@keyframes hvr-buzz {
+		50% {
+			-webkit-transform: translateX(3px) rotate(2deg);
+			transform: translateX(3px) rotate(2deg);
+		}
+		100% {
+			-webkit-transform: translateX(-3px) rotate(-2deg);
+			transform: translateX(-3px) rotate(-2deg);
+		}
+	}
+}
